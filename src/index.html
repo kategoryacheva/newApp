@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="renderer.js"></script>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
+  <body>
+    <div id ='1' align="center">
+        <button onclick='start()'>Играть</button>
+    </div>
+
+    <div id='2' style='display:none' align='center'>
+	<div class='text'>Количество игроков</div>
+	<div class='players'><button onclick='choose(1)'> 1 игрок </button></div>
+	<div class='players'><button onclick='choose(2)'> 2 игрока </button></div>
+    </div>
+
+    <div id='3' style="display:none" align="center">
+	<div class='text'>Выберите</div>
+	<div class='XO' style="display:inline-block">
+	<button onclick='chooseXO("X")'>X</button>
+	</div>
+	<div class='XO' style="display:inline-block">
+	<button onclick='chooseXO("O")'>O</button>
+	</div>
+    </div>
+
+    <div id='4' style="display:none" align="center">
+        <div class='text' id='5'></div>
+        <table id='table'>
+	    <tr>
+		    <td id='cell0' onclick='print(0)'></td>
+		    <td id='cell1' onclick='print(1)'></td>
+		    <td id='cell2' onclick='print(2)'></td>
+	    </tr>
+	    <tr>
+		    <td id='cell3' onclick='print(3)'></td>
+		    <td id='cell4' onclick='print(4)'></td>
+		    <td id='cell5' onclick='print(5)'></td>
+	    </tr>
+	    <tr>
+		    <td id='cell6' onclick='print(6)'></td>
+		    <td id='cell7' onclick='print(7)'></td>
+		    <td id='cell8' onclick='print(8)'></td>
+	    </tr>
+        </table>
+    </div>
+
+    <div id='6' style='display:none' align='center'>
+	<div class='text' id='7'></div>
+	<button style="width: 200px" onclick='restart()'>Сыграть еще раз</button>
+    </div>
+  </body>
+</html>
